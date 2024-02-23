@@ -3,7 +3,7 @@ const app = express();
 
 // Middleware to log requests
 app.use((req, res, next) => {
-  console.log(`Middleware ${req.method} ${req.url}`);
+  console.log(`Middleware1  ${req.method} ${req.url}`);
   next();
 });
 
@@ -30,7 +30,7 @@ app.post('/users', (req, res) => {
 });
 
 // Start the server
-const PORT = 3000;
+const PORT = 3001;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
