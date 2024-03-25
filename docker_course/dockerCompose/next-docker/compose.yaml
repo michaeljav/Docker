@@ -19,7 +19,7 @@ services:
           target: /app
           action: sync
     environment:
-      - DB_URL=mongodb+srv://michaeljaviermota:GiNn4b39nPbkps3b@cluster0.3ytnvqr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      - DB_URL=mongodb://host.docker.internal:27017/Task
 
 volumes:
   tasked:
